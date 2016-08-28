@@ -5,6 +5,20 @@ body {
   margin: 0;
   overflow: hidden;
 }
+.google-btn-cont {
+  text-align: center;
+}
+.google-login-btn {
+  margin: 20px auto;
+  background: red;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 1.25em;
+}
 #main {
   width: 100%;
   height: 100%;

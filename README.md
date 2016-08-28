@@ -26,3 +26,7 @@ Invite people using google calendar api
 * index.html `file to start`
 
 
+### TODO
+
+* Session is not persistent. Reloading page takes to login again
+* Add Validation
