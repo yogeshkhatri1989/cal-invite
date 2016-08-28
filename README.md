@@ -2,6 +2,15 @@
 
 Invite people using google calendar api
 
+### Flow
+
+  1. Login page (contains just a button to sign in through google account)
+  2. Calendar Page
+    * All events (for current view) of user are fetched from google account and shown in calendar view
+    * User can select time by clicking or dragging time/date cells in the calendar view
+    * After selecting time/date, user enters information to store in google calendar as event. He can add multiple attendees using email ids.
+    * After saving the invite, it is shown in the view too.
+
 
 ### Folder Structure
 
@@ -15,3 +24,5 @@ Invite people using google calendar api
 * js `own libraries or other vendor libraries`
 * views `angularjs views (2 views currently, first page for button and then calendar view)`
 * index.html `file to start`
+
+
