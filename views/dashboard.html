@@ -1,0 +1,67 @@
+
+<div id = "header" class="row">
+  <span class="navbar-text">
+    Choose Available Time
+  </span>
+</div>
+
+<div id = "main" class="row">
+  
+  <div id = "info-bar" class="col-md-3">
+    
+    <div class="invite-form-cont row">        
+      <form name="invite-form" class="invite-form col-md-12" ng-submit="addEvent()">
+
+        <div class="form-group row event-time-info">
+          <label>Start : </label>
+          <span class="event-start-time"></span>
+        </div>
+
+        <div class="form-group row event-time-info">
+          <label>End : </label>
+          <span class="event-end-time"></span>
+        </div>
+
+        <div class="form-group row">
+          <label class="sr-only" for="">To</label>
+          <input type="text" class="form-control" required name="attendees" ng-model="event.emails" placeholder="To (comma seperated emails)">
+        </div>
+        <div class="form-group row">
+          <label class="sr-only" for="">Summary</label>
+          <input type="text" class="form-control" required name="summary" ng-model="event.summary" placeholder="Summary">
+        </div>
+        <div class="form-group row">
+          <label class="sr-only" for="">Location</label>
+          <input type="text" class="form-control" name="location" ng-model="event.location" placeholder="Location">
+        </div>
+        <div class="form-group row">
+          <label class="sr-only" for="">Description</label>
+          <textarea class="form-control" name="description" ng-model="event.description" placeholder="Description" rows="4"></textarea>
+        </div>
+
+        <input type="hidden" name="start" ng-model="event.start">
+        <input type="hidden" name="end" ng-model="event.end">
+        
+        <div class="form-group row">
+          <div class="col-md-8">
+            <button type="submit" class="btn btn-primary btn-block">Insert Invite</button>
+          </div>
+          <div class="col-md-4">
+            <button type="button" class="btn btn-block" ng-click="resetForm()">Cancel</button>
+          </div>
+        </div>
+
+      </form>
+    </div>
+
+  </div>
+
+  <div class="col-md-9">
+    <div id = "calendar-cont">
+      <div ui-calendar="calendarConfig" id = "calendar">
+        Loading...
+      </div>
+    </div>
+  </div>
+
+</div>
